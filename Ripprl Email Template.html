@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        *{
+            font-family: "Montserrat", sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 650px; /* Ensure the email has a max width */
+            margin: auto;
+        }
+        td {
+            padding: 0;
+        }
+        .email-template {
+            background-color: #ffffff;
+        }
+        .welcome-section {
+            background-color: #333333;
+            text-align: center;
+            padding: 20px;
+        }
+        .welcome-img {
+            padding: 20px;
+        }
+        .welcome-section-msg {
+            padding: 20px;
+        }
+        .welcome-section-msg-content p {
+            color:#292A33;
+        }
+
+        .welcome-section img {
+        width: 100%;
+        display: block;}
+
+         /*Welcome Section msg*/
+         .welcome-section-msg-content {
+            padding-top: 30px !important;
+            padding-bottom: 30px !important;
+            padding-left: 40px !important;
+            padding-right: 40px !important;
+            background-color: white!important;
+        }   
+
+        .welcome-section-msg-content h1 {
+            font-size: 25px;
+            color: #E57B13;
+            font-weight: 500;
+        }
+
+        .welcome-section-msg-content p {
+            font-size: 20px;
+            font-weight: 500 !important;
+            line-height: 30px;
+            color: #3F4048D9;
+        }
+        /*Welcome Section End*/
+
+        /*Call to action 1*/
+        .call-to-action-text{
+            padding: 20px!important;
+            padding-top: 15px!important;
+            padding-bottom: 15px!important;
+            padding-left: 40px!important;
+            padding-right: 40px!important;
+            background-color:#292A33 ;
+        }
+
+        .call-to-action-text h1 {
+            font-size: 25px;
+            color:white;
+            font-weight: 500;
+        }
+        /*Call to action 1 end*/
+
+        /*SS Section start*/
+        .screenshoot-section {
+            display: flex;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+            flex-direction: row;
+        }
+
+
+        .ss-col {
+            text-align: center;
+        }
+        .ss-col img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .screenshoot-section {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(to bottom, #EFEFEF 80%, rgba(255, 0, 0, 0) 80%);
+        padding-top: 35px;
+        }
+        /*SS section end*/
+
+
+        /*Brand Intro Section Start*/
+        .brand-intro-section {
+            display: block;
+            width: 100%;
+            margin: 0px auto;
+            background-color: white!important;
+        }
+
+        .brand-head {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .brand-head h3 {
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 41px;
+            color: #3F4048;
+            letter-spacing: 2px;
+        }
+
+        .brand-logo {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #E57B13;
+        }
+
+        .brand-logo img {
+            width: 30%;
+            padding: 15px;
+        }
+
+        .brand-footer {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        .brand-footer h3 {
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 41px;
+            color: #3F4048;
+            letter-spacing: 2px;
+        }
+        /*Brand Intro Section End*/
+
+        /*Service Section Start */
+        .service-section {
+                width: 100%!important;
+                display: inline-block;
+                /* padding: 30px; */
+                margin: 0px auto;
+                text-align: center;
+                padding: 0px!important;
+                margin: 0px!important;
+                background:white!important;
+        }
+
+        tr.service-section.service-section1 {
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        tr.service-section.service-section2 {
+            padding-top: 0px !important;
+        }
+
+        .service-section.service-section4 {
+            padding-bottom: 30px !important;
+        }
+
+
+        .service-block {
+            /* padding: 10px; */
+            display: block;
+           
+            /* padding: 15px; */
+            padding-top: 30px !important;
+            /* padding-bottom: 0px !important; */
+            
+        }
+
+
+        .service-block img {
+            width: 61px!important;
+            height: auto;
+        }
+        .service-block h3 {
+            margin-top: 0px;
+            margin-bottom: 8px;
+            font-size: 22px;
+            color: #333333;
+        }
+        .service-block p {
+            font-size:20px;
+            color:#585960;
+            font-weight: 400;
+        }
+
+
+
+        /*Service Section End*/
+
+
+        
+
+        /*Call to action 2 start*/
+        .call-to-action-2 {
+                padding: 20px;
+                display: block;
+                text-align: center;
+                background: #E57B13;
+                color: white;
+                padding-top: 30px!important;
+                padding-bottom: 30px!important;
+            }
+
+        .call-to-action-2-content{
+            display: block;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        .call-to-action-2-content h1 {
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        .call-to-action-2 p {
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            padding: 15px;
+            line-height: 25px;
+            color: #FEF7EF;
+        }
+
+        .call-to-action-2-content h3 {
+            font-size: 19px;
+            padding: 15px;
+            border: 2px solid white;
+            width: fit-content!important;
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        /*Call to action 2 end*/
+        
+
+        /*Subsidy Section Start*/
+        .subsidy-section-header {
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding-top: 30px !important;
+            padding-bottom: 30px;
+            background-color: #292A33;
+        }
+
+        .subsidy-section-header td {
+            display: block;
+            text-align: center;
+            width: 100% !important;
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+
+        .subsidy-section-header h1 {
+            font-size: 25px;
+            color:white;
+            font-weight: 600;
+        }
+        .subsidy-section-boxes {
+            
+            text-align: left;
+            padding-top: 30px;
+            padding-left: 10px !important;
+            padding-right: 30px !important;
+            padding-bottom: 30px !important;
+        }
+
+        tr.subsidy-section-boxes {
+            display: block;
+            /* width: 100%!important; */
+            padding: 30px;
+            border: 1px solid red;
+        
+        }
+
+        tr.subsidy-section-boxes {
+            display: block;
+            /* width: 100%!important; */
+            padding: 30px;
+            border: none!important;
+            background: #292A33;
+            align-items: end;
+            padding-top: 0px!important;
+            text-align:picture-in-picture
+        }
+
+        td.subsidy-box {
+            display: inline-block;
+            width: 100% !important;
+            text-align: center!important;
+            padding-top: 0px!important;
+            padding-bottom: 0px!important;
+        }
+
+        td.subsidy-box.subsidy-box-3 {
+            padding-bottom: 1px!important;
+        }
+
+        .subsidy-box p {
+            text-align: center !important;
+        }
+
+
+        .subsidy-box {
+            
+            padding: 10px !important;
+            border-radius: 10px;
+        }
+        .subsidy-box img {
+            max-width: 100%;
+            height: auto;
+        }
+        .subsidy-box h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 23px;
+            color:#E57B13;
+            font-weight: 400;
+            line-height: 20px!important;
+        }
+        .subsidy-box p {
+            font-size: 14px;
+            color:#ffffffb5 !important;
+            text-align: left;
+            line-height: 21px;
+            font-weight: 400;
+        }
+
+
+
+        .subsidy-box-1 img {
+            width: 90px;
+        }
+
+        .subsidy-box p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .subsidy-box.subsidy-box-2 img {
+            width: 90px;
+        }
+
+        .subsidy-box.subsidy-box-3 img {
+            width: 58px;
+        }
+
+        .check-list {
+            display: flex;
+            align-items: center; /* Center content vertically */
+            padding: 0!important;
+            margin-top: 10px;
+            margin-left: 10px!important;
+
+        }
+
+        .check-list p {
+            flex: 1;
+            margin: 0;
+            font-size: 16px!important;
+            color: #ffffffb5 !important;
+            line-height: 15px;
+        }
+
+        .check-list img {
+            width: 21px !important;
+            padding-right: 10px;
+        }
+
+        .check-list p {
+            flex: 1; /* Paragraph takes up the remaining width (90%) */
+            margin: 0; /* Remove default margin */
+            font-size: 14px;
+            color: #666666;
+        }
+
+.subsidy-box.subsidy-box-3 ul {
+    padding: 0;
+    list-style: none; /* Remove default list style */
+}
+
+.marker li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffffb5 !important;
+    position: relative;
+    padding-left: 1.5em;
+    line-height: 20px!important;
+}
+
+.marker li::marker {
+    color: #E57B13;
+    font-size: 25px;
+}
+
+
+.check-mark-box {
+	width: 600px;
+	text-align: center;
+	list-style-position: inside;
+}
+
+.marker {
+	margin-top: -10px;
+}
+
+.edg-highlight-content {
+    text-align: center;
+    margin: 0px auto;
+}
+.edg-highlight-content hr {
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    color: #E57B13!important;
+    /* background: red!important; */
+    border-top: 1px solid #E57B13!important;
+}
+
+.edg-highlight-content h3 {
+    font-size: 20px;
+    color: #585960;
+    font-weight: 400;
+    padding-bottom: 15px!important;
+}
+
+
+
+
+
+
+
+        /*Subsidy Section end*/
+
+        /*Eligable Section Start*/
+
+        .eligable-section-header {
+            display: block;
+            text-align: center;
+            width: 100%;
+            background-color: white!important;
+        }
+
+       tr.eligable-section-header h1 {
+            padding: 30px!important;
+        }
+
+        .eligable-section-header td {
+            display: block;
+            text-align: center;
+            width: 100% !important;
+            padding: 0px !important;
+            margin: 0px !important;
+
+        }
+
+        .eligable-section-header h1 {
+            font-size: 25px;
+            color: #292A33;
+            font-weight: 600;
+        }
+
+
+        .eligable-section-content {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            padding-top: 0px !important;
+            background-color: white!important;
+        }
+
+        .eligable-section-content {
+            display: flex;
+        }
+
+        .eligable-section-content {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            padding-top: 0px !important;
+            display: block !important;
+        }
+
+        .eligable-section-content td {
+            flex: 1; /* Ensures each td takes up equal space */
+            padding: 10px; /* Optional: Add some padding */
+            box-sizing: border-box; /* Ensures padding does not affect width calculation */
+        }
+
+
+
+        .eligable-section-right img {
+            width:315px!important;
+        }
+
+        .eligable-section-left h3 {
+                font-size: 22px;
+                margin: 15px;
+                font-weight: 400;
+                border-left: 5px solid #E57B13;
+                margin-bottom: 35px;
+                padding-left: 11px;
+                font-family: "Montserrat", sans-serif;
+                margin-left:0px!important;
+                margin-right: 0px!important;
+                color: #292A33!important;
+        }
+
+
+        .eligable-section-content {
+            display: block!important;
+            width: 100%!important;
+            padding: 0px!important;
+            padding-top: 0px !important;
+            display: block !important;
+        }
+
+        td.eligable-section-left {
+            padding: 30px!important;
+            padding-top: 0px!important;
+            width: 50%!important;
+            padding-right: 0px!important;
+        }
+
+        td.eligable-section-right {
+            padding: 30px!important;
+            padding-right: 30px!important;
+            width: 50%;
+            padding-left: 0px!important;
+            vertical-align: baseline!important;
+        }
+
+        /*Eligable Section end*/
+        .call-to-action-3 {
+            padding: 20px;
+            display: block;
+            text-align: center;
+            background:#EFEFEF;
+            color: white;
+            padding-top: 30px!important;
+        }
+
+        .call-to-action-3-head{
+            display: block;
+            margin: 0px auto;
+            text-align: center;
+        }  
+        
+        .call-to-action-3-head h1{
+            font-size: 30px;
+            color: #E57B13;
+            font-weight: 600;
+        }   
+
+        .call-to-action-3-body {
+            display: block;
+            width: 100%;
+                       background: #EFEFEF;
+            padding-bottom: 0px!important;
+        }
+
+        .emailID {
+            display: block;
+            /* width: 100%; */
+            text-align: center;
+            /* padding: 20px; */
+            padding-top: 0px;
+            background: #EFEFEF;
+            padding-bottom: 30px;
+        }
+
+        td.list-1-call-to-action {
+            border: 1px solid red;
+            width: 100%!important;
+            display: inline-block;
+            padding: 0px!important;
+            /* text-align: center!important; */
+        }
+
+        .list-1-call-to-action h1 > img {
+            width: 25px;
+            padding-bottom:15px ;
+        }
+
+        .list-1-call-to-action h1 > a {
+            color: #3D3E46;
+            font-size: 23px;
+            font-weight: 400;
+            padding-left: 15px;
+            text-decoration: none;
+            padding-bottom: 10px!important;
+
+        }
+
+        .list-1-call-to-action h1 {
+                display: flex;
+                flex-basis: auto;
+                flex-flow: row;
+        }
+
+       
+        #link {
+            border-bottom: 2px solid black;
+            padding-bottom: 2px;
+        }
+
+        #link:hover {
+            color: #E57B13;
+            border-bottom: 2px solid #E57B13 ;
+        }
+
+        
+
+        /* .call-to-action-3-mail*/
+        .emailID a {
+            font-size: 22px;
+            color: black;
+            font-weight: bold;
+            text-decoration:none!important;
+            margin-top: -5px!important;
+        }
+
+
+
+
+        td.call-to-action-url1 img {
+            width: 25px;
+        }
+
+        td.call-to-action-url1 a {
+            font-size: 21px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold!important;
+        }
+
+        .call-to-action-url1 img {
+            margin-bottom: 10px; /* Adds some space between the image and the link */
+        }
+
+        .call-to-action-url1 img {
+            margin-bottom: -5px;
+            margin-right: 10px;
+        }
+
+        td.call-to-action-url1 {
+            display: block;
+            margin: 0px auto;
+            text-align: center;
+            background-color: #EFEFEF;
+            padding-bottom: 12px;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+
+
+        /*Call to action 3 mail end*/
+
+
+        /*Footer 1 Start */
+        .footer-1 {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #E57B13;
+        }
+
+        .footer-1 td {
+            padding: 20px;
+            text-align: center;
+            width: 100%!important;
+        }
+
+        .footer-1 h1 {
+           
+            text-align: center;
+        }
+
+        .footer-1 td {
+            display: block;
+            text-align: center;
+            width: 100% !important;
+            padding: 20px;
+            padding-left: 0px !important;
+        }
+
+        .footer-1 h1 {
+            font-size: 25px;
+            font-weight: 400;
+            color: #FEFEFE;
+            letter-spacing: 1px;
+        }
+
+        .footer td {
+            display: block;
+            /* width: 100%; */
+            padding: 30px!important;
+            /* text-align: center; */
+            background-color: white!important;
+        }
+
+        .footer p {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 400;
+            color:#000000d4!important;
+            line-height: 30px!important;
+        }
+       
+        /*EDG Section New*/
+        tr.eligable-section-body {
+            display: block;
+            padding: 30px!important;
+            padding-top: 0px!important;
+        }
+
+        tr.eligable-section-body td {
+            width: 100%!important;
+            display: block;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        tr.eligable-section-body span {
+            font-size: 14px;
+            color:#292A33 !important;
+            text-align: left;
+            line-height: 25px!important;
+            font-weight: 400;
+        }
+        tr.eligable-section-body span {
+            font-size: 14px;
+            color: #292A33 !important;
+            text-align: left;
+            line-height: 25px !important;
+            font-weight: 400;
+            display: block;
+            text-align: center;
+            font-size: 22px;
+            padding-bottom: 0px;
+            padding-top: 10px !important;
+        }
+
+        .edg-content span {
+            width: 50%;
+            /* border: 1px solid #E57B13; */
+            text-align: left !important;
+            margin: 0px auto;
+            border-left: 5px solid #E57B13;
+            padding-left: 12px;
+            margin-bottom: 12px;
+            line-height: -4px !important;
+        }
+
+        
+
+        .high-lighter img {
+            width: 25px;
+            padding-right: 10px;
+        }
+
+
+        .call-to-action-3-mail td {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+
+        .service-section td {
+            padding-left: 15px !important;
+            padding-right: 15px!important;
+        }
+        
+
+        .subsidy-box p {
+            text-align: center!important;
+        }
+
+
+
+
+
+
+
+        .call-to-action-3-mail {
+            display: block!important;
+        }
+
+        .call-to-action-mobile {
+            display: none!important;
+        }
+
+        .call-to-action-3-head-mobile {
+            display: none;
+        }
+
+        .service-section1 {
+            display: block;
+        }
+
+        #service-section-mobile1 {
+            display: none!important;
+        }
+
+        .service-section2 {
+            display: block;
+        }
+        #service-section-mobile2 {
+            display: none;
+        }
+
+        .service-section3 {
+            display: block;
+        }
+        #service-section-mobile3 {
+            display: none;
+        }
+
+        .service-section4 {
+            display: block;
+        }
+        #service-section-mobile4 {
+            display: none;
+        }
+
+
+        .subsidy-box-1 {
+            display: block;
+        }
+
+        #subsidy-box-mobile1 {
+            display: none!important;
+        }
+
+        .subsidy-box-2 {
+            display: block!;
+        }
+
+        #subsidy-box-mobile2 {
+            display: none!important;
+        }
+
+      
+        #welcome-section-msg-content-mobile {
+            display: none!important;
+        }
+
+        .welcome-section-msg-content {
+            display: block!important;
+        }
+
+
+
+        .subsidy-box-3  {
+            display: block!important;
+        }
+
+        .check-mark-box {
+            display: block!important;
+        }
+
+        
+
+
+        @media only screen and (max-width: 480px) {
+        /*Welcome Section*/
+        .welcome-section-msg-content {
+            display: none!important;
+        }
+        #welcome-section-msg-content-mobile {
+            display: block!important;
+        }
+
+
+
+
+
+
+
+        /*Service Section*/
+
+
+        .service-section1 {
+            display: none!important;
+        }
+
+        #service-section-mobile1 {
+            display: block!important;
+            
+        }
+
+        .service-section2 {
+            display: none!important;
+        }
+
+        #service-section-mobile2 {
+            display: block!important;
+            
+        }
+
+        .service-section3 {
+            display: none!important;
+        }
+
+        #service-section-mobile3 {
+            display: block!important;
+           
+        }
+
+        .service-section4 {
+            display: none!important;
+        }
+
+        #service-section-mobile4 {
+            display: block!important;
+            
+        }
+
+
+        /*EDG Section Mobile*/
+        .subsidy-box-1 {
+            display: none;
+        }
+
+        #subsidy-box-mobile1 {
+            display: block!important;
+        }
+
+        .subsidy-box-2 {
+            display: none;
+        }
+
+        #subsidy-box-mobile2 {
+            display: block!important;
+        }
+
+        .subsidy-box-3  {
+            display: block!important;
+        }
+
+        .check-mark-box {
+            display: block!important;
+        }
+  
+
+
+        
+
+        /*Call to action*/
+        .call-to-action-3-head {
+            display: none;
+        }
+
+        .call-to-action-3-head-mobile {
+            display: block!important;
+        }
+        .call-to-action-3-mail {
+            display: none !important;
+        }
+
+        .call-to-action-mobile {
+            display: block!important;
+        }
+
+
+
+
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <center>
+        <table role="presentation" class="email-template">
+            <!--Header Welcome Screen start-->
+            <tr class="welcome-section">
+                <td><img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-01-1.jpg" alt=""></td>
+            </tr>
+            <!--Header Welcome Screen end-->
+
+            <!--Header welcome section message start-->
+            <tr class="welcome-section-msg">
+                <td class="welcome-section-msg-content">
+                    <h1>Hi *|MERGE3|* </h1>
+                    <p>We know keeping your team skilled-up in today's fast-paced business environment can be a challenge.</p>
+
+                    <p>Traditional training workshops can be disruptive and let's be honest, a bit boring.</p>
+                </td>
+
+            <td class="welcome-section-msg-content" id="welcome-section-msg-content-mobile">
+                    <h1>Hi *|MERGE3|* </h1>
+                    <p>We know keeping your team skilled-up in today's fast-paced business environment can be a challenge.</p>
+
+                    <p>Traditional training workshops can be disruptive and let's be honest, a bit boring.</p>
+                </td>
+            </tr>
+            <!--Header welcome section message end-->
+
+            <!--Call to Action 1 Start-->
+            <tr class="call-to-action-1">
+                <td class="call-to-action-text">
+                    <h1>What if you could offer engaging, self-paced
+                        learning that sticks?</h1>
+                </td>
+            </tr>
+            <!--Call to Action 1 End-->
+
+            <!--Screenshoot Section start-->
+            <tr class="screenshoot-section screenshoot-bg">
+                <td class="ss-col">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/3-2.png" alt="">
+                </td>
+                <td class="ss-col">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-3.png" alt="">
+                </td>
+                <td class="ss-col">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/2-3.png" alt="">
+                </td>
+            </tr>
+            <!--Screenshoot section end-->
+
+            <!--Brand Intro Section Start-->
+            <tr class="brand-intro-section">
+                <td class="brand-head">
+                    <h3>Introducing</h3>
+                </td>
+
+                <td class="brand-logo">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/Logo.png" alt="">
+                </td>
+
+                <td class="brand-footer">
+                    <h3>your one-stop shop for:</h3>
+                </td>
+            </tr>
+            <!--Brand intro section end-->
+            
+            <!--Service Section Start-->
+            <tr class="service-section service-section1">
+                <td class="service-block">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-01.png" alt="">
+                    <h3>Engaging Microlearning</h3>
+                    <p>Bite-sized, easy-to-digest
+                        training modules <br>that fit
+                        seamlessly into busy
+                        schedules.</p>
+                </td>
+            </tr>
+
+            <tr class="service-section service-section1" id="service-section-mobile1">
+                <td class="service-block">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-01.png" alt="">
+                    <h3>Engaging Microlearning</h3>
+                    <p>Bite-sized, easy-to-digest
+                        training modules that fit
+                        seamlessly <br>into busy
+                        schedules.</p>
+                </td>
+            </tr>
+
+            <tr class="service-section service-section2">
+                <td class="service-block">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-02.png" alt="">
+                    <h3>Customizable Content</h3>
+                    <p>Tailored training programs
+                        that reflect your<br> company's
+                        specific needs and
+                        branding.</p>
+                </td>
+            </tr>
+
+            <tr class="service-section service-section2" id="service-section-mobile2">
+                <td class="service-block">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-02.png" alt="">
+                    <h3>Customizable Content</h3>
+                    <p>Tailored training programs<br>
+                        that reflect your company's<br>
+                        specific needs and
+                        branding.</p>
+                </td>
+            </tr>
+            
+            <tr class="service-section service-section3">
+                <td class="service-block">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-03.png" alt="">
+                    <h3>Gamified Learning</h3>
+                    <p>Points, badges,
+                        leaderboards and
+                        interactive <br>challenges
+                        make learning FUN!</p>
+                </td>
+            </tr>
+
+            <tr class="service-section service-section3" id="service-section-mobile3">
+                <td class="service-block">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-03.png" alt="">
+                    <h3>Gamified Learning</h3>
+                    <p>Points, badges,
+                        leaderboards<br> and
+                        interactive challenges<br>
+                        make learning FUN!</p>
+                </td>
+            </tr>
+
+            <tr class="service-section service-section4">
+                <td class="service-block">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-04.png" alt="">
+                    <h3>Detailed Progress Reporting</h3>
+                    <p>Track your team's
+                        progress and ensure<br>
+                        knowledge
+                        transfer.</p>
+                </td>              
+            </tr>
+
+            <tr class="service-section service-section4" id="service-section-mobile4">
+                <td class="service-block">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-04.png" alt="">
+                    <h3>Detailed Progress Reporting</h3>
+                    <p>Track your team's
+                        progress<br> and ensure
+                        knowledge
+                        transfer.</p>
+                </td>              
+            </tr>
+            <!--Service Section End-->                      
+
+
+            <!--Call to action 2 start-->
+            <tr class="call-to-action-2">
+                <td class="call-to-action-2-content">
+                    <h1>The Result?</h1>
+                    <p>A more engaged, motivated and skilled workforce!<br>
+                        Plus, great news for Singapore-based companies!</p>
+                    
+                        <h3>You can unlock up to 50% off training costs<br>
+                            through the Enterprise Development Grant (EDG).</h3>
+                </td>
+            </tr>
+            <!--Call to action 2 End-->
+
+
+            <!--Subsidy Section Start-->
+          
+                <tr class="subsidy-section-header">
+                    <td><h1 style="text-align: center;">Up to 50% subsidy with EDG</h1></td>
+                </tr>
+
+                <tr class="subsidy-section-boxes">
+                    <td class="subsidy-box subsidy-box-1">
+                        <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1.png" alt="">
+                        <h3>What is
+                            EDG Grant?</h3>
+                            <p>The Enterprise
+                                Development Grant
+                                (EDG), a program <br> from
+                                Enterprise Singapore,
+                                assists businesses
+                                seeking <br>to enhance their
+                                operations,
+                                innovate, or expand<br>
+                                internationally across
+                                three main areas: Core
+                                Capabilities, <br>Innovation
+                                & Productivity and
+                                Market Access</p>
+                    </td>
+
+                    <td class="subsidy-box subsidy-box-1" id="subsidy-box-mobile1">
+                        <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1.png" alt="">
+                        <h3>What is
+                            EDG Grant?</h3>
+                            <p>The Enterprise
+                                Development Grant
+                                (EDG), a program  from
+                                Enterprise Singapore,
+                                assists businesses
+                                seeking to enhance their
+                                operations,
+                                innovate, or expand
+                                internationally across
+                                three main areas: Core
+                                Capabilities, Innovation
+                                & Productivity and
+                                Market Access</p>
+                    </td>
+                </tr>
+
+                <tr class="subsidy-section-boxes">
+                    <td class="subsidy-box subsidy-box-2">
+                        <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/2-1.png" alt="">
+                        <h3>How much
+                            funding can I get?</h3>
+                            <p>Starting 1 April 2023,
+                                SMEs are eligible for up
+                                to 50% <br>funding through
+                                the EDG. For projects
+                                
+                                focused <br>on sustainability, the funding could
+                                
+                                increase<br> to 70% from 1
+                                April 2023 until 31 March
+                                2026</p>
+                    </td>
+
+                    <td class="subsidy-box subsidy-box-2" id="subsidy-box-mobile2">
+                        <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/2-1.png" alt="">
+                        <h3>How much
+                            funding can I get?</h3>
+                            <p>Starting 1 April 2023,
+                                SMEs are eligible for up
+                                to 50% funding through
+                                the EDG. For projects focused on sustainability, the funding could
+                                increase to 70% from 1
+                                April 2023 until 31 March
+                                2026</p>
+                    </td>
+                </tr>
+
+                <tr class="subsidy-section-boxes">
+
+                    <td class="subsidy-box subsidy-box-3">
+                        <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/3.png" alt="">
+                        <h3>Do I qualify
+                            for EDG Grant?</h3>
+                            <p>To be eligible, your
+                                company must:</p>
+                    </td>
+
+                    <td class="check-mark-box">
+                        
+                            <ul class="marker">
+                                <li>Be registered and active
+                                    in Singapore</li>
+
+                                <li>Possess at least 30%
+                                    local ownership</li>
+
+                                    <li>Be financially capable of
+                                        initiating and finishing
+                                        the project</li>
+                            </ul>
+                        
+                    </td>
+                </tr>
+                 <!--Subsidy Section end-->
+
+
+                 <!--Eligable Section Start -->
+                 <tr class="eligable-section-header">
+                        <td style="text-align: center;">
+                            <h1>Here's what makes your company <br>eligible for EDG:</h1>
+                        </td>
+                 </tr>
+
+                 <tr class="eligable-section-body">
+                        <td class="edg-img">
+                            <img src="http://ripprl.right-impact.com/wp-content/uploads/2024/06/1-1-e1718883455925.png" alt="">
+                        </td>
+
+                        <td class="edg-highlight-content">
+                            <h3>For-profit business
+                                based in Singapore</h3>
+
+                                <hr style="width: 25%;">
+                                
+                            <h3>Healthy financial
+                                position</h3>
+
+                                <hr style="width: 25%;">
+
+                            <h3>At least 30% local
+                                    shareholding</h3>
+                        </td>
+                 </tr>
+                 
+                 <!--Eligable Section end -->
+
+
+            <!--Call to action 3 start-->
+            <tr class="call-to-action-3">
+                <td class="call-to-action-3-head">
+                    <h1>Don't miss out on this opportunity<br>
+                        to transform your team!</h1>                   
+                </td> 
+                
+                <td class="call-to-action-3-head call-to-action-3-head-mobile">
+                    <h1>Don't miss out on this opportunity
+                        to transform your team!</h1>                   
+                </td>  
+            </tr>
+
+            <!-- <tr class="call-to-action-3-body">
+                <td class="list-1-call-to-action">
+                        <h1>
+                            <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-05.png" alt="">                          
+
+                            <a style="font-weight:bold;color:black" href="https://ripprl.right-impact.com/employee-training/" target="_blank">Visit our <span id="link">Ripprl Employee Training page</span></a>
+
+                        </h1>
+                </td>
+
+                <td class="list-1-call-to-action">    <h1>
+                            <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-05.png" alt="">
+
+                            
+
+                            
+
+                        </h1>                      
+                </td>
+            </tr> -->
+
+            <tr class="call-to-action-3-mail">
+                <td class="call-to-action-url1">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-05.png" alt="">
+                    <a style="font-weight:bold;color:black" href="https://ripprl.right-impact.com/employee-training/" target="_blank">Visit our <span id="link">Ripprl Employee Training page</span></a>
+                </td>
+
+                <td class="call-to-action-url1">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-05.png" alt="">
+                    <a style="font-weight:bold;color:black" href="https://ripprl.right-impact.com/employee-training/" target="_blank">Schedule a FREE, no-obligation demo</a>
+                </td>
+
+                <td class="emailID">
+                    <a href="mailto:connect@right-impact.com">connect@right-impact.com</a>
+                </td>
+            </tr>
+
+
+            <!--Call to action 3 End-->
+
+
+            <!--Call to action mobile-->
+            <tr class="call-to-action-3-mail call-to-action-mobile">
+                <td class="call-to-action-url1">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-05.png" alt="">
+                    <a style="font-weight:bold;color:black" href="https://ripprl.right-impact.com/employee-training/" target="_blank">Visit our <span id="link">Ripprl Employee Training page</span></a>
+                </td>
+
+                <td class="call-to-action-url1">
+                    <img src="https://ripprl.right-impact.com/wp-content/uploads/2024/06/1-05.png" alt="">
+                    <a style="font-weight:bold;color:black" href="https://ripprl.right-impact.com/employee-training/" target="_blank">Schedule a FREE, no-obligation demo</a>
+                </td>
+
+                <td class="emailID">
+                    <a href="mailto:connect@right-impact.com">connect@right-impact.com</a>
+                </td>
+            </tr>
+
+
+            <!--Footer 1-->
+            <tr class="footer-1">
+                <td>
+                    <h1>We look forward to helping<br>
+                        you create a winning team!</h1>
+                </td>
+            </tr>
+            <!--Footer 1 end-->
+
+            <tr class="footer">
+                <td>
+                    <p>Best regards,<br>
+                        The Right Impact Team</p>
+                </td>
+            </tr>
+
+           
+          
+
+
+        </table>
+    </center>
+</body>
+</html>
